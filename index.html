@@ -11,7 +11,7 @@
             --naranja: #e67e22; 
             --verde: #27ae60; 
             --verde-bandera: #006837;
-            --rojo: #e74c3c; 
+            --rojo: #006837; 
             --azul: #2980b9; 
             --bg-body: #f8f9fa;
             --bg-card: #ffffff;
@@ -929,7 +929,7 @@ async function generarPDF() {
         filename: `FRAP_${document.getElementById('pdf-fol').innerText}.pdf`,
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 1.8, useCORS: true, logging: false, scrollY: 0 },
-        jsPDF: { unit: 'mm', format: 'legal', orientation: 'portrait' },
+        jsPDF: { unit: 'mm', format: 'letter', orientation: 'portrait' },
         pagebreak: { mode: [] }
     };
 
