@@ -128,7 +128,7 @@
                 <td style="width:15%"><img id="logo2" width="45"></td>
             </tr>
         </table>
-        <div style="display:flex; justify-content:space-between; font-size:8.5px; margin-top:2px; background:#f8f9fa; padding:3px; border:1px solid #dee2e6; color: black;">
+        <div style="display:flex; justify-content:space-between; font-size:8.5px; margin-top:2px; background:#f8f9fa; padding:3px; border:1px solid #ffffff; color: black;">
             <span>FOLIO: <b id="pdf-fol" style="color:red;"></b></span>
             <span>FECHA: <b id="pdf-fec"></b></span>
         </div>
@@ -474,6 +474,15 @@
                 <input type="text" data-label="Nombre Paramédico" placeholder="Nombre Paramédico">
             </div>
 
+            <div class="sig-container pdf-section">
+                <label>Médico / Hospital</label>
+                <div class="sig-box">
+                    <button type="button" class="btn-clear no-pdf" onclick="pads.pc.clear()">Limpiar</button>
+                    <canvas id="sig-pc"></canvas>
+                </div>
+                <input type="text" data-label="Médico / Hospital" placeholder="Médico/Hospital">
+            </div>
+            
             <div class="sig-container pdf-section">
                 <label>Paciente / Familiar</label>
                 <div class="sig-box">
