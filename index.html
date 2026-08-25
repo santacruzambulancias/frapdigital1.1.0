@@ -178,13 +178,14 @@
             </div>
 
             <div class="grid">
-                <div><label>Despacho</label><input type="time" data-label="T. Despacho"></div>
-                <div><label>Arribo</label><input type="time" data-label="T. Arribo"></div>
-                <div><label>Traslado</label><input type="time" data-label="T. Traslado"></div>
-                <div><label>2do Traslado</label><input type="time" data-label="T. 2do Traslado"></div>
-                <div><label>2do Destino</label><input type="time" data-label="T. 2do Destino"></div>
+                <div><label>Despacho</label><input type="time" data-label="Despacho"></div>
+                <div><label>Arribo</label><input type="time" data-label="Arribo"></div>
+                <div><label>Traslado</label><input type="time" data-label="Traslado"></div>
+                <div><label>Traslado</label><input type="time" data-label="Destino"></div>
+                <div><label>2do Traslado</label><input type="time" data-label="2do Traslado"></div>
+                <div><label>2do Destino</label><input type="time" data-label="2do Destino"></div>
                 <div><label>Tiempo de Espera</label><input type="time" data-label="T. de Espera"></div>
-                <div><label>Fin</label><input type="time" data-label="T. Fin"></div>
+                <div><label>Fin</label><input type="time" data-label="Final"></div>
             </div>
         </div>
     </details>
@@ -690,7 +691,7 @@ window.onload = () => {
     const n = localStorage.getItem('frap_n') || 1;
     const hoy = new Date().toLocaleDateString('es-MX');
     
-    document.getElementById('pdf-fol').innerText = "AJTP-" + String(n).padStart(5, '0');
+    document.getElementById('pdf-fol').innerText = "D01-" + String(n).padStart(5, '0');
     document.getElementById('web-fol').innerText = document.getElementById('pdf-fol').innerText;
     document.getElementById('pdf-fec').innerText = hoy;
     document.getElementById('web-fec').innerText = hoy;
